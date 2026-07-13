@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDEs
+.idea/
+.vscode/
+*.code-workspace
+
+# Operating systems
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local input and output files
+images/*
+!images/.gitkeep
+outputs/*
+!outputs/.gitkeep
+
+# Local model cache, if configured inside the project
+models/
+.cache/
+huggingface/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Test and coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/

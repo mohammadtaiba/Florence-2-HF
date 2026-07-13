@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "florence2-local-test"
+version = "1.0.0"
+description = "Lokaler Kommandozeilen-Test für Microsoft Florence-2"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "torch>=2.2,<3",
+    "torchvision>=0.17,<1",
+    "transformers==4.49.0",
+    "pillow>=10.2,<12",
+    "timm>=0.9,<2",
+    "einops>=0.7,<1",
+    "safetensors>=0.4,<1",
+    "python-dotenv>=1.0,<2",
+]
+
+[project.scripts]
+florence2-test = "florence2_hf.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
