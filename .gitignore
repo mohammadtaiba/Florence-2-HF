@@ -22,10 +22,10 @@ Thumbs.db
 *.log
 
 # Local input and output files
-images/*
-!images/.gitkeep
-outputs/*
-!outputs/.gitkeep
+input/*
+!input/.gitkeep
+output/*
+!output/.gitkeep
 
 # Local model cache, if configured inside the project
 models/
